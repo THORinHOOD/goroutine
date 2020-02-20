@@ -29,9 +29,7 @@ func (node Node) String() string {
 }
 
 func randomBinTree(depth int, width int) *Node {
-	if depth == 0 {
-		return nil
-	} else if rand.Intn(20) > 18 {
+	if depth == 0 || rand.Intn(20) > 18 {
 		return nil
 	}
 
